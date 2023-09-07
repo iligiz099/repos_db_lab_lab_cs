@@ -1,0 +1,531 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0045)http://firebirdsql.su/doku.php?id=tipy_dannyx -->
+<HTML lang=ru dir=ltr xml:lang="ru" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Типы данных [Словарик по FireBird]</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.5512" name=GENERATOR>
+<META content=index,follow name=robots>
+<META content=2012-08-02T19:32:20+0400 name=date>
+<META content=tipy_dannyx name=keywords><LINK title="Словарик по FireBird" 
+href="/lib/exe/opensearch.php" type=application/opensearchdescription+xml 
+rel=search><LINK href="/" rel=start><LINK title="Все страницы" 
+href="/doku.php?id=tipy_dannyx&amp;do=index" rel=contents><LINK 
+title="Recent Changes" href="/feed.php" type=application/rss+xml 
+rel=alternate><LINK title="Current Namespace" href="/feed.php?mode=list&amp;ns=" 
+type=application/rss+xml rel=alternate><LINK title="Править страницу" 
+href="/doku.php?id=tipy_dannyx&amp;do=edit" rel=edit><LINK title="Plain HTML" 
+href="/doku.php?do=export_xhtml&amp;id=tipy_dannyx" type=text/html 
+rel=alternate><LINK href="http://firebirdsql.su/doku.php?id=tipy_dannyx" 
+rel=canonical><LINK media=screen 
+href="Типы данных [Словарик по FireBird].files/css.css" type=text/css 
+rel=stylesheet><LINK media=all 
+href="\\10.10.10.2\edu ресурсы\Библиотека\KAF\Базы данных_БИ\Типы данных [Словарик по FireBird].files\css(1).css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="\\10.10.10.2\edu ресурсы\Библиотека\KAF\Базы данных_БИ\Типы данных [Словарик по FireBird].files\css(2).css" 
+type=text/css rel=stylesheet>
+<SCRIPT type=text/javascript><!--//--><![CDATA[//><!--
+var NS='';var JSINFO = {"id":"tipy_dannyx","namespace":""};
+//--><!]]></SCRIPT>
+
+<SCRIPT src="Типы данных [Словарик по FireBird].files/js.php" 
+type=text/javascript charset=utf-8></SCRIPT>
+<LINK href="/lib/tpl/default/images/favicon.ico" rel="shortcut icon"><LINK 
+href="/lib/tpl/default/images/apple-touch-icon.png" rel=apple-touch-icon></HEAD>
+<BODY>
+<DIV class=dokuwiki>
+<DIV class=stylehead>
+<DIV class=header>
+<DIV class=pagename>[[<A title="Ссылки сюда" 
+href="http://firebirdsql.su/doku.php?id=tipy_dannyx&amp;do=backlink">Типы 
+данных</A>]] </DIV>
+<DIV class=logo><A id=dokuwiki__top title=[H] accessKey=h 
+href="http://firebirdsql.su/doku.php" name=dokuwiki__top>Словарик по 
+FireBird</A> </DIV>
+<DIV class=clearer></DIV></DIV>
+<DIV class=bar id=bar__top>
+<DIV class=bar-left id=bar__topleft>
+<FORM class="button btn_edit" action=/doku.php method=post>
+<DIV class=no><INPUT type=hidden value=edit name=do><INPUT type=hidden 
+name=rev><INPUT type=hidden value=tipy_dannyx name=id><INPUT class=button title="Править страницу [E]" accessKey=e type=submit value="Править страницу"></DIV></FORM>
+<FORM class="button btn_revs" action=/doku.php method=get>
+<DIV class=no><INPUT type=hidden value=revisions name=do><INPUT type=hidden 
+value=tipy_dannyx name=id><INPUT class=button title="История страницы [O]" accessKey=o type=submit value="История страницы"></DIV></FORM></DIV>
+<DIV class=bar-right id=bar__topright>
+<FORM class="button btn_recent" action=/doku.php method=get>
+<DIV class=no><INPUT type=hidden value=recent name=do><INPUT type=hidden 
+value=tipy_dannyx name=id><INPUT class=button title="Недавние изменения [R]" accessKey=r type=submit value="Недавние изменения"></DIV></FORM>
+<FORM class=search id=dw__search accept-charset=utf-8 action=/doku.php 
+method=get>
+<DIV class=no><INPUT type=hidden value=search name=do><INPUT class=edit 
+id=qsearch__in title=[F] accessKey=f name=id><INPUT class=button title=Поиск type=submit value=Поиск>
+<DIV class="ajax_qsearch JSpopup" id=qsearch__out></DIV></DIV></FORM>&nbsp; 
+</DIV>
+<DIV class=clearer></DIV></DIV>
+<DIV class=breadcrumbs><SPAN class=bchead>Вы посетили:</SPAN> <SPAN 
+class=bcsep>•</SPAN> <SPAN class=curid><A class=breadcrumbs title=tipy_dannyx 
+href="http://firebirdsql.su/doku.php?id=tipy_dannyx">Типы данных</A></SPAN> 
+</DIV></DIV>
+<DIV class=page><!-- wikipage start --><!-- TOC START -->
+<DIV class=toc>
+<DIV class="tocheader toctoggle" id=toc__header>Содержание</DIV>
+<DIV id=toc__inside>
+<UL class=toc>
+  <LI class=level1>
+  <DIV class=li><SPAN class=li><A class=toc 
+  href="http://firebirdsql.su/doku.php?id=tipy_dannyx#tipy_dannyx">Типы 
+  данных</A></SPAN></DIV>
+  <UL class=toc>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://firebirdsql.su/doku.php?id=tipy_dannyx#tablica_tipov_dannyx">Таблица 
+    типов данных</A></SPAN></DIV>
+    <LI class=level2>
+    <DIV class=li><SPAN class=li><A class=toc 
+    href="http://firebirdsql.su/doku.php?id=tipy_dannyx#primery_po_char_i_varchar">примеры 
+    по char и varchar</A></SPAN></DIV></LI></UL></LI></UL></DIV></DIV><!-- TOC END -->
+<H1 class=sectionedit1><A id=tipy_dannyx name=tipy_dannyx>Типы данных</A></H1>
+<DIV class=level1>
+<P>Типы данных <ACRONYM title="Structured Query Language">SQL</ACRONYM>-сервера 
+Firebird, используются при создании доменов, таблиц, просмотров, хранимых 
+процедур, объявления контекстных переменных в PSQL-блоках/хранимых 
+процедурах/триггерах. </P></DIV>
+<DIV class="secedit editbutton_section editbutton_1">
+<FORM class="button btn_secedit" action=/doku.php method=post>
+<DIV class=no><INPUT type=hidden value=edit name=do><INPUT type=hidden 
+value=1343921540 name=rev><INPUT type=hidden value="[Типы данных] " 
+name=summary><INPUT type=hidden value=section name=target><INPUT type=hidden 
+value=1-368 name=range><INPUT type=hidden value=tipy_dannyx name=id><INPUT class=button title="Типы данных" type=submit value=Править></DIV></FORM></DIV>
+<H2 class=sectionedit2><A id=tablica_tipov_dannyx 
+name=tablica_tipov_dannyx>Таблица типов данных</A></H2>
+<DIV class=level2>
+<DIV class="table sectionedit3">
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 leftalign">Имя </TH>
+    <TH class="col1 leftalign">Размер </TH>
+    <TH class="col2 leftalign">Точность </TH>
+    <TH class=col3>Описание</TH></TR>
+  <TR class=row1>
+    <TD class="col0 leftalign">BLOB </TD>
+    <TD class="col1 leftalign">Переменный </TD>
+    <TD class=col2>Нет. Размер сегмента BLOB ограничивается 64К. </TD>
+    <TD class=col3>Тип данных с динамически изменяемым размером для хранения 
+      больших данных, таких как графика, тексты, оцифрованные звуки. Базовая 
+      структурная единица — сегмент. Подтип Blob описывает содержимое.</TD></TR>
+  <TR class=row2>
+    <TD class=col0>CHAR(n) </TD>
+    <TD class=col1>n/кол-во_байт_на_символ, т.е. зависит от кодировки </TD>
+    <TD class=col2>от 1 до 32 767 байтов.</TD>
+    <TD class=col3>Набор символов определяет размер символов в байтах и задает 
+      количество символов, которое может быть меньше 32К CHAR фиксированной 
+      длины или строка текста. В случае если строка меньше заявленой - она 
+      добивается пробелами с конца до заданной длины<SUP><A class=fn_top 
+      id=fnt__1 href="http://firebirdsql.su/doku.php?id=tipy_dannyx#fn__1" 
+      name=fnt__1>1)</A></SUP></TD></TR>
+  <TR class=row3>
+    <TD class=col0>CHARACTER(n)</TD>
+    <TD class="col1 centeralign">–\\– </TD>
+    <TD class="col2 centeralign">–\\– </TD>
+    <TD class="col3 centeralign">–\\– </TD></TR>
+  <TR class=row4>
+    <TD class=col0>VARCHAR(n) </TD>
+    <TD class="col1 centeralign">–\\– </TD>
+    <TD class=col2>от 1 до 32 765 байтов.</TD>
+    <TD class=col3>Набор символов определяет размер символов в байтах и задает 
+      количество символов, которое может быть меньше 32К CHAR переменной длины 
+      или строка текста. сохраняются конечные пробелы, но обрезаются те что не 
+      вмещаются в обьявленую длину<SUP><A class=fn_top id=fnt__2 
+      href="http://firebirdsql.su/doku.php?id=tipy_dannyx#fn__2" 
+      name=fnt__2>2)</A></SUP></TD></TR>
+  <TR class=row5>
+    <TD class=col0>CHAR VARYING (n)</TD>
+    <TD class="col1 centeralign">–\\– </TD>
+    <TD class="col2 centeralign">–\\– </TD>
+    <TD class="col3 centeralign">–\\– </TD></TR>
+  <TR class=row6>
+    <TD class=col0>CHARACTER VARYING (n)</TD>
+    <TD class="col1 centeralign">–\\– </TD>
+    <TD class="col2 centeralign">–\\– </TD>
+    <TD class="col3 centeralign">–\\– </TD></TR>
+  <TR class=row7>
+    <TD class="col0 leftalign">DATE </TD>
+    <TD class="col1 leftalign">32 бита </TD>
+    <TD class=col2>1 января 0001 г. – 31 декабря 9999 г.</TD>
+    <TD class=col3>Сохраняет дату в 32-битовом длинном слове</TD></TR>
+  <TR class=row8>
+    <TD class="col0 leftalign">DECIMAL (precision, scale) </TD>
+    <TD class="col1 leftalign">Переменный (16, 32 или 64 бита) </TD>
+    <TD class=col2>precision = от 1 до 18; указывает, по меньшей мере, 
+      precision количество цифр для хранения. scale = от 0 до 18. Задает 
+      количество знаков после точки. Должно быть меньше или равно precision</TD>
+    <TD class=col3>Число с десятичной точкой, имеющей после точки scale 
+      разрядов. Пример: DECIMAL(10,3) содержит число точно в следующем формате: 
+      ppppppp.sss</TD></TR>
+  <TR class=row9>
+    <TD class="col0 leftalign">DOUBLE PRECISION </TD>
+    <TD class="col1 leftalign">64 бита </TD>
+    <TD class=col2>от 2.225 x 10^–308 до 1.797 x 10^308</TD>
+    <TD class=col3>IEEE двойной точности. 15 цифр.</TD></TR>
+  <TR class=row10>
+    <TD class="col0 leftalign">FLOAT </TD>
+    <TD class="col1 leftalign">32 бита </TD>
+    <TD class="col2 leftalign">от 1.175 x 10^–38 до 3.402 x 10^38 </TD>
+    <TD class=col3>IEEE одинарной точности. 7 цифр.</TD></TR>
+  <TR class=row11>
+    <TD class="col0 leftalign">INT64 </TD>
+    <TD class="col1 leftalign">64 бита </TD>
+    <TD class="col2 leftalign">от –2^63 до (2^63)-1 </TD>
+    <TD class=col3>аналогично NUMERIC(18,0)</TD></TR>
+  <TR class=row12>
+    <TD class="col0 leftalign">INTEGER </TD>
+    <TD class="col1 leftalign">32 бита </TD>
+    <TD class="col2 leftalign">от –2,147,483,648 до 2,147,483,647 </TD>
+    <TD class=col3>Знаковое длинное (двойное слово).</TD></TR>
+  <TR class=row13>
+    <TD class=col0>NCHAR(n)</TD>
+    <TD class=col1>n символов</TD>
+    <TD class=col2>от 1 до 32 767 байтов.</TD>
+    <TD class=col3>Тоже самое что CHAR(n), за исключением того что NCHAR 
+      использует кодировку ISO8859_1 по умолчанию.</TD></TR>
+  <TR class=row14>
+    <TD class=col0>NATIONAL CHAR(n)</TD>
+    <TD class="col1 centeralign">–\\– </TD>
+    <TD class="col2 centeralign">–\\– </TD>
+    <TD class="col3 centeralign">–\\– </TD></TR>
+  <TR class=row15>
+    <TD class=col0>NATIONAL CHARACTER(n)</TD>
+    <TD class="col1 centeralign">–\\– </TD>
+    <TD class="col2 centeralign">–\\– </TD>
+    <TD class="col3 centeralign">–\\– </TD></TR>
+  <TR class=row16>
+    <TD class="col0 leftalign">NUMERIC (precision, scale) </TD>
+    <TD class="col1 leftalign">Переменный (16, 32 или 64 бита) </TD>
+    <TD class="col2 leftalign">precision = от 1 до 18; точное количество цифр 
+      для хранения. scale = от 0 до 18; задает количество знаков после точки. 
+      Должно быть меньше или равно precision. </TD>
+    <TD class=col3>Число с десятичной точкой, имеющей после точки scale 
+      разрядов. Пример: NUMERIC(10,3) содержит число точно в следующем формате: 
+      ppppppp.sss </TD></TR>
+  <TR class=row17>
+    <TD class="col0 leftalign">SMALLINT </TD>
+    <TD class="col1 leftalign">16 бит </TD>
+    <TD class="col2 leftalign">от –32768 до 32767 </TD>
+    <TD class=col3>Знаковое короткое (слово).</TD></TR>
+  <TR class=row18>
+    <TD class="col0 leftalign">TIME </TD>
+    <TD class="col1 leftalign">32 бита </TD>
+    <TD class="col2 leftalign">от 0:00:00.000 до 23:59:59.9999 </TD>
+    <TD class=col3>Беззнаковое целое типа InterBase ISC_TIME. Время дня в 
+      единицах 0.0001 секунды после полуночи.</TD></TR>
+  <TR class=row19>
+    <TD class="col0 leftalign">TIMESTAMP </TD>
+    <TD class="col1 leftalign">64 бита </TD>
+    <TD class="col2 leftalign">1 января 0001 г. 0:00:00.0000 – 31 декабря 9999 
+      г. 23:59:59.9999 </TD>
+    <TD class=col3>Тип InterBase ISC_TIMESTAMP. Комбинация информации DATE и 
+      TIME.</TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="secedit editbutton_section editbutton_2">
+<FORM class="button btn_secedit" action=/doku.php method=post>
+<DIV class=no><INPUT type=hidden value=edit name=do><INPUT type=hidden 
+value=1343921540 name=rev><INPUT type=hidden value="[Таблица типов данных] " 
+name=summary><INPUT type=hidden value=section name=target><INPUT type=hidden 
+value=369-4892 name=range><INPUT type=hidden value=tipy_dannyx name=id><INPUT class=button title="Таблица типов данных" type=submit value=Править></DIV></FORM></DIV>
+<H2 class=sectionedit4><A id=primery_po_char_i_varchar 
+name=primery_po_char_i_varchar>примеры по char и varchar</A></H2>
+<DIV class=level2><PRE class=code>CREATE TABLE NEW_TABLE (
+    VCH  VARCHAR(10),
+    CH   CHAR(10)
+);</PRE><PRE class="code sql"><SPAN class=kw1>INSERT</SPAN> <SPAN class=kw1>INTO</SPAN> NEW_TABLE <SPAN class=br0>(</SPAN>VCH<SPAN class=sy0>,</SPAN> CH<SPAN class=br0>)</SPAN> <SPAN class=kw1>VALUES</SPAN> <SPAN class=br0>(</SPAN><SPAN class=st0>'   000   '</SPAN><SPAN class=sy0>,</SPAN> <SPAN class=st0>'   000   '</SPAN><SPAN class=br0>)</SPAN>;
+<SPAN class=kw1>INSERT</SPAN> <SPAN class=kw1>INTO</SPAN> NEW_TABLE <SPAN class=br0>(</SPAN>VCH<SPAN class=sy0>,</SPAN> CH<SPAN class=br0>)</SPAN> <SPAN class=kw1>VALUES</SPAN> <SPAN class=br0>(</SPAN><SPAN class=st0>'111   '</SPAN><SPAN class=sy0>,</SPAN> <SPAN class=st0>'111   '</SPAN><SPAN class=br0>)</SPAN>;
+<SPAN class=kw1>INSERT</SPAN> <SPAN class=kw1>INTO</SPAN> NEW_TABLE <SPAN class=br0>(</SPAN>VCH<SPAN class=sy0>,</SPAN> CH<SPAN class=br0>)</SPAN> <SPAN class=kw1>VALUES</SPAN> <SPAN class=br0>(</SPAN><SPAN class=st0>'222'</SPAN><SPAN class=sy0>,</SPAN> <SPAN class=st0>'222'</SPAN><SPAN class=br0>)</SPAN>;
+<SPAN class=kw1>INSERT</SPAN> <SPAN class=kw1>INTO</SPAN> NEW_TABLE <SPAN class=br0>(</SPAN>VCH<SPAN class=sy0>,</SPAN> CH<SPAN class=br0>)</SPAN> <SPAN class=kw1>VALUES</SPAN> <SPAN class=br0>(</SPAN><SPAN class=st0>'   333'</SPAN><SPAN class=sy0>,</SPAN> <SPAN class=st0>'   333'</SPAN><SPAN class=br0>)</SPAN>;
+<SPAN class=kw1>INSERT</SPAN> <SPAN class=kw1>INTO</SPAN> NEW_TABLE <SPAN class=br0>(</SPAN>VCH<SPAN class=sy0>,</SPAN> CH<SPAN class=br0>)</SPAN> <SPAN class=kw1>VALUES</SPAN> <SPAN class=br0>(</SPAN><SPAN class=st0>'444          '</SPAN><SPAN class=sy0>,</SPAN> <SPAN class=st0>'444          '</SPAN><SPAN class=br0>)</SPAN>;<SPAN class=coMULTI>/*10 пробелов*/</SPAN></PRE><PRE class="code sql"><SPAN class=kw1>SELECT</SPAN> <SPAN class=st0>'*'</SPAN><SPAN class=sy0>||</SPAN>ch<SPAN class=sy0>||</SPAN><SPAN class=st0>'*'</SPAN> ch<SPAN class=sy0>,</SPAN> <SPAN class=st0>'*'</SPAN><SPAN class=sy0>||</SPAN>vch<SPAN class=sy0>||</SPAN><SPAN class=st0>'*'</SPAN> vch  <SPAN class=kw1>FROM</SPAN> new_table</PRE>
+<P>результат </P>
+<DIV class="table sectionedit5">
+<TABLE class=inline>
+  <TBODY>
+  <TR class=row0>
+    <TH class="col0 centeralign">CH </TH>
+    <TH class="col1 centeralign">VCH </TH></TR>
+  <TR class=row1>
+    <TD class=col0><PRE class=code>*   000    *</PRE></TD>
+    <TD class=col1><PRE class=code>*   000   *</PRE></TD></TR>
+  <TR class=row2>
+    <TD class=col0><PRE class=code>*111       *</PRE></TD>
+    <TD class=col1><PRE class=code>*111   *</PRE></TD></TR>
+  <TR class=row3>
+    <TD class=col0><PRE class=code>*222       *</PRE></TD>
+    <TD class=col1><PRE class=code>*222*</PRE></TD></TR>
+  <TR class=row4>
+    <TD class=col0><PRE class=code>*   333    *</PRE></TD>
+    <TD class=col1><PRE class=code>*   333*</PRE></TD></TR>
+  <TR class=row5>
+    <TD class=col0><PRE class=code>*444       *</PRE></TD>
+    <TD class=col1><PRE class=code>*444       *</PRE></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class="secedit editbutton_section editbutton_4">
+<FORM class="button btn_secedit" action=/doku.php method=post>
+<DIV class=no><INPUT type=hidden value=edit name=do><INPUT type=hidden 
+value=1343921540 name=rev><INPUT type=hidden 
+value="[примеры по char и varchar] " name=summary><INPUT type=hidden 
+value=section name=target><INPUT type=hidden value=4893- name=range><INPUT 
+type=hidden value=tipy_dannyx name=id><INPUT class=button title="примеры по char и varchar" type=submit value=Править></DIV></FORM></DIV>
+<DIV class=footnotes>
+<DIV class=fn><SUP><A class=fn_bot id=fn__1 
+href="http://firebirdsql.su/doku.php?id=tipy_dannyx#fnt__1" 
+name=fn__1>1)</A></SUP> , <SUP><A class=fn_bot id=fn__2 
+href="http://firebirdsql.su/doku.php?id=tipy_dannyx#fnt__2" 
+name=fn__2>2)</A></SUP> пример ниже</DIV></DIV>
+<DIV class=comment_wrapper>
+<H2><A id=discussion__section name=discussion__section>Дискуссия </A></H2>
+<DIV class="level2 hfeed">
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__ad34b5b7de5f9ece04e9e82776257b0b 
+name=comment__ad34b5b7de5f9ece04e9e82776257b0b></A><SPAN 
+class="vcard author"><SPAN class=fn>Attid</SPAN></SPAN>, <ABBR class=published 
+title=2008-02-11T15:14:01Z>%2008/%02/%11 %18:%Feb</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>такие вещи как &lt;тип данных&gt; &lt;array_dim&gt; 
+&lt;dom_search_condition&gt; встречаются также во многих местах, может имеет 
+смысл их вынести на отдельную страницу ? во первых при изменении не надо будет 
+править в 10 местах, во вторых по этойже причине проще отслеживать ошибки. 
+</P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=ad34b5b7de5f9ece04e9e82776257b0b name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=comment_replies style="MARGIN-LEFT: 20px">
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__402010164e220e3a501b8c5d04e09342 
+name=comment__402010164e220e3a501b8c5d04e09342></A><SPAN 
+class="vcard author"><SPAN class=fn>kdv@ibase.ru</SPAN></SPAN>, <ABBR 
+class=published title=2008-05-27T05:33:20Z>%2008/%05/%27 %09:%May</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>однозначно - да. </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=402010164e220e3a501b8c5d04e09342 name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__df31416955e452a76f45a00ef0f3a67f 
+name=comment__df31416955e452a76f45a00ef0f3a67f></A><SPAN 
+class="vcard author"><SPAN class=fn>Slava Ekimov</SPAN></SPAN>, <ABBR 
+class=published title=2008-02-13T08:23:14Z>%2008/%02/%13 %11:%Feb</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>INT64 - не 10 в степени, а 2 в степени </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=df31416955e452a76f45a00ef0f3a67f name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__14cfe32ef3c84590f62ed62f802a2b14 
+name=comment__14cfe32ef3c84590f62ed62f802a2b14></A><SPAN 
+class="vcard author"><SPAN class=fn>PEAKTOP</SPAN></SPAN>, <ABBR class=published 
+title=2008-04-26T23:52:20Z>%2008/%04/%27 %03:%Apr</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>А пример-то правильный ? Мне раньше казалось, что VARCHAR в отличие от CHAR 
+«рубит» конечные пробелы в данных. </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=14cfe32ef3c84590f62ed62f802a2b14 name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=comment_replies style="MARGIN-LEFT: 20px">
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__098b1218f3e4d8f607007aed4df0be8d 
+name=comment__098b1218f3e4d8f607007aed4df0be8d></A><SPAN 
+class="vcard author"><SPAN class=fn>Attid</SPAN></SPAN>, <ABBR class=published 
+title=2008-05-27T10:50:32Z>%2008/%05/%27 %14:%May</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>ну насколько я помню я проверял <IMG class=middle alt==) 
+src="Типы данных [Словарик по FireBird].files/icon_smile2.gif"> проверить не 
+трудно <IMG class=middle alt==) 
+src="Типы данных [Словарик по FireBird].files/icon_smile2.gif"> </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=098b1218f3e4d8f607007aed4df0be8d name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__f1103e168fdb8ae4336d855c476e220a 
+name=comment__f1103e168fdb8ae4336d855c476e220a></A><SPAN 
+class="vcard author"><SPAN class=fn>Alexandr</SPAN></SPAN>, <ABBR 
+class=published title=2008-09-08T06:44:16Z>%2008/%09/%08 %10:%Sep</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>Небольшой вопросик, а чем отличается DECIMAL (precision, scale) от NUMERIC 
+(precision, scale)? Названия разные, а записи в таблице одинаковые. </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=f1103e168fdb8ae4336d855c476e220a name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__ef9c4470daf3de955c3f1f945610c149 
+name=comment__ef9c4470daf3de955c3f1f945610c149></A><SPAN 
+class="vcard author"><SPAN class=fn>Attid</SPAN></SPAN>, <ABBR class=published 
+title=2008-09-08T08:17:36Z>%2008/%09/%08 %12:%Sep</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>да вроде синонимы, лучше на форумах спрашивать. </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=ef9c4470daf3de955c3f1f945610c149 name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__b899fcd5236c384d4d64b52fb3699dff 
+name=comment__b899fcd5236c384d4d64b52fb3699dff></A><SPAN 
+class="vcard author"><SPAN class=fn>Alexandr</SPAN></SPAN>, <ABBR 
+class=published title=2008-09-10T17:10:37Z>%2008/%09/%10 %21:%Sep</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>FireBird сохраняет физическое число в типе данных Numeric с точностью 1-4 как 
+SMALLINT и переполнение будет при 32768 или -32769. А DECIMAL хранит как INTEGER 
+и переполнение будет при переходе выше максимального числа типа INTEGER. При 
+точности 9-18 типы так же не совпадают. </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=b899fcd5236c384d4d64b52fb3699dff name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__b0f0385ce50757ef5621b271b9d20fa9 
+name=comment__b0f0385ce50757ef5621b271b9d20fa9></A><SPAN 
+class="vcard author"><SPAN class=fn>Герман</SPAN></SPAN>, <ABBR class=published 
+title=2008-09-12T09:39:06Z>%2008/%09/%12 %13:%Sep</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>В стандарте <ACRONYM title="Structured Query Language">SQL</ACRONYM>-92 
+(глава 6.1) сказано, что тип DECIMAL имеет право хранить большее число знаков, 
+чем указано в precision </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=b0f0385ce50757ef5621b271b9d20fa9 name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__f0e5999ead02305c69b4a38eabb7d7d5 
+name=comment__f0e5999ead02305c69b4a38eabb7d7d5></A><SPAN 
+class="vcard author"><SPAN class=fn>Sergey</SPAN></SPAN>, <ABBR class=published 
+title=2011-02-08T15:54:44Z>%2011/%02/%08 %18:%Feb</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>Типа INT64 имхо нет, а есть BIGINT </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=f0e5999ead02305c69b4a38eabb7d7d5 name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__ed1f6378b277c73e91e248ae7ebf11df 
+name=comment__ed1f6378b277c73e91e248ae7ebf11df></A><SPAN 
+class="vcard author"><SPAN class=fn>Sergey</SPAN></SPAN>, <ABBR class=published 
+title=2011-02-08T17:01:22Z>%2011/%02/%08 %20:%Feb</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>Типа INT64 имхо нет, а есть BIGINT </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=ed1f6378b277c73e91e248ae7ebf11df name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=hentry>
+<DIV class=comment_head><A id=comment__097ae3f5facdec7a43e6cde48131c5e3 
+name=comment__097ae3f5facdec7a43e6cde48131c5e3></A><SPAN 
+class="vcard author"><SPAN class=fn>toxicdream</SPAN></SPAN>, <ABBR 
+class=published title=2011-10-31T20:55:00Z>%2011/%11/%01 %00:%Nov</ABBR>: </DIV>
+<DIV class="comment_body entry-content" style="MARGIN-LEFT: 20px">
+<P>При создании таблицы надо учитывать кодировку. Например, если кодировка 
+UTF-8, то в скрипте для »(VAR)CHAR(n)» n может быть от 1 до 8191 </P></DIV>
+<DIV class=comment_buttons>
+<FORM class=button action=/doku.php#discussion__comment_form method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=reply name=comment> <INPUT 
+type=hidden value=097ae3f5facdec7a43e6cde48131c5e3 name=cid> <INPUT class=button title=Ответить type=submit value=Ответить> 
+</DIV></FORM></DIV></DIV>
+<DIV class=comment_form>
+<FORM id=discussion__comment_form accept-charset=" utf-8" 
+onsubmit="return validate(this);" action=/doku.php method=post>
+<DIV class=no><INPUT type=hidden value=tipy_dannyx name=id> <INPUT type=hidden 
+value=show name=do> <INPUT type=hidden value=add name=comment> <INPUT 
+type=hidden name=reply> <INPUT type=hidden value=178.217.168.180 name=user> 
+<DIV class=comment_name><LABEL class=block 
+for=discussion__comment_name><SPAN>Полное имя:</SPAN> <INPUT class=edit 
+id=discussion__comment_name tabIndex=1 size=50 name=name> </LABEL></DIV>
+<DIV class=comment_mail><LABEL class=block 
+for=discussion__comment_mail><SPAN>Эл. адрес:</SPAN> <INPUT class=edit 
+id=discussion__comment_mail tabIndex=2 size=50 name=mail> </LABEL></DIV>
+<DIV class=comment_text>Enter your comment (wiki syntax is allowed):<BR><TEXTAREA class=edit id=discussion__comment_text tabIndex=5 name=text rows=10 cols=80></TEXTAREA> 
+</DIV>
+<DIV id=plugin__captcha_wrapper><INPUT type=hidden value=EeIhyPTzEgM= 
+name=plugin__captcha_secret><LABEL for=plugin__captcha>Please fill all the 
+letters into the box to prove you're human.</LABEL> <INPUT class=edit 
+id=plugin__captcha maxLength=5 size=5 name=plugin__captcha> <IMG height=22 
+alt="" src="Типы данных [Словарик по FireBird].files/img.png" width=115> </DIV><INPUT class=button tabIndex=6 type=submit value=Сохранить name=submit> 
+</DIV></FORM></DIV></DIV></DIV><!-- wikipage stop --></DIV>
+<DIV class=clearer></DIV>
+<DIV class=stylefoot>
+<DIV class=meta>
+<DIV class=user></DIV>
+<DIV class=doc>tipy_dannyx.txt · Последние изменения: 2012/08/02 19:32 — 
+212.90.163.17 </DIV></DIV>
+<DIV class=bar id=bar__bottom>
+<DIV class=bar-left id=bar__bottomleft>
+<FORM class="button btn_edit" action=/doku.php method=post>
+<DIV class=no><INPUT type=hidden value=edit name=do><INPUT type=hidden 
+name=rev><INPUT type=hidden value=tipy_dannyx name=id><INPUT class=button title="Править страницу [E]" accessKey=e type=submit value="Править страницу"></DIV></FORM>
+<FORM class="button btn_revs" action=/doku.php method=get>
+<DIV class=no><INPUT type=hidden value=revisions name=do><INPUT type=hidden 
+value=tipy_dannyx name=id><INPUT class=button title="История страницы [O]" accessKey=o type=submit value="История страницы"></DIV></FORM></DIV>
+<DIV class=bar-right id=bar__bottomright>
+<FORM class="button btn_media" action=/doku.php method=get>
+<DIV class=no><INPUT type=hidden value=media name=do><INPUT type=hidden 
+value=tipy_dannyx name=id><INPUT class=button title="Media Manager" type=submit value="Media Manager"></DIV></FORM>
+<FORM class="button btn_login" action=/doku.php method=get>
+<DIV class=no><INPUT type=hidden value=login name=do><INPUT type=hidden 
+value=f9d2fa7c10c19f78e83b554076d3af5a name=sectok><INPUT type=hidden 
+value=tipy_dannyx name=id><INPUT class=button title=Войти type=submit value=Войти></DIV></FORM>
+<FORM class="button btn_index" action=/doku.php method=get>
+<DIV class=no><INPUT type=hidden value=index name=do><INPUT type=hidden 
+value=tipy_dannyx name=id><INPUT class=button title="Все страницы [X]" accessKey=x type=submit value="Все страницы"></DIV></FORM><A 
+class=nolink href="http://firebirdsql.su/doku.php?id=tipy_dannyx#dokuwiki__top"><INPUT class=button title=Наверх onclick="window.scrollTo(0, 0)" type=button value=Наверх></A>&nbsp; 
+</DIV>
+<DIV class=clearer></DIV></DIV></DIV>
+<DIV class=license>За исключением случаев, когда указано иное, содержимое этой 
+вики предоставляется на условиях следующей лицензии: <A class=urlextern 
+href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel=license>CC 
+Attribution-Noncommercial-Share Alike 3.0 Unported</A></DIV></DIV>
+<DIV class=footerinc><A title="Recent changes RSS feed" 
+href="http://firebirdsql.su/feed.php"><IMG height=15 
+alt="Recent changes RSS feed" 
+src="Типы данных [Словарик по FireBird].files/button-rss.png" width=80></A> <A 
+title="CC Attribution-Noncommercial-Share Alike 3.0 Unported" 
+href="http://creativecommons.org/licenses/by-nc-sa/3.0/" rel=license><IMG 
+height=15 alt="" src="Типы данных [Словарик по FireBird].files/cc-by-nc-sa.png" 
+width=80></A> <A title=Donate href="http://www.dokuwiki.org/donate"><IMG 
+height=15 alt=Donate 
+src="Типы данных [Словарик по FireBird].files/button-donate.gif" width=80></A> 
+<A title="Powered by PHP" href="http://www.php.net/"><IMG height=15 
+alt="Powered by PHP" 
+src="Типы данных [Словарик по FireBird].files/button-php.gif" width=80></A> <A 
+title="Valid XHTML 1.0" href="http://validator.w3.org/check/referer"><IMG 
+height=15 alt="Valid XHTML 1.0" 
+src="Типы данных [Словарик по FireBird].files/button-xhtml.png" width=80></A> <A 
+title="Valid CSS" 
+href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3"><IMG 
+height=15 alt="Valid CSS" 
+src="Типы данных [Словарик по FireBird].files/button-css.png" width=80></A> <A 
+title="Driven by DokuWiki" href="http://dokuwiki.org/"><IMG height=15 
+alt="Driven by DokuWiki" 
+src="Типы данных [Словарик по FireBird].files/button-dw.png" width=80></A> 
+</DIV>
+<DIV class=no><IMG height=1 alt="" src="" width=2></DIV></BODY></HTML>
